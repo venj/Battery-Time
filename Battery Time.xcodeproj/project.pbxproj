@@ -12,6 +12,7 @@
 		2580E7881E04EF0700A0316C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2580E7871E04EF0700A0316C /* Assets.xcassets */; };
 		2580E78B1E04EF0700A0316C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2580E7891E04EF0700A0316C /* Main.storyboard */; };
 		2580E7951E04F1E000A0316C /* Battery Time Helper.app in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2580E7811E04EF0700A0316C /* Battery Time Helper.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		2580E7991E04FB5600A0316C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 2580E79B1E04FB5600A0316C /* InfoPlist.strings */; };
 		25AC9D311E026B4E003C7AC8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AC9D301E026B4E003C7AC8 /* AppDelegate.m */; };
 		25AC9D341E026B4E003C7AC8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 25AC9D331E026B4E003C7AC8 /* main.m */; };
 		25AC9D391E026B4E003C7AC8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 25AC9D381E026B4E003C7AC8 /* Assets.xcassets */; };
@@ -52,6 +53,8 @@
 		2580E78A1E04EF0700A0316C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2580E78C1E04EF0700A0316C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2580E7961E04F57A00A0316C /* Battery Time Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Battery Time Helper.entitlements"; sourceTree = "<group>"; };
+		2580E79A1E04FB5600A0316C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		2580E79C1E04FB5700A0316C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
 		25AC9D2C1E026B4E003C7AC8 /* Battery Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battery Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25AC9D2F1E026B4E003C7AC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25AC9D301E026B4E003C7AC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +120,7 @@
 			children = (
 				25AC9D2F1E026B4E003C7AC8 /* AppDelegate.h */,
 				25AC9D301E026B4E003C7AC8 /* AppDelegate.m */,
+				2580E79B1E04FB5600A0316C /* InfoPlist.strings */,
 				2580E77A1E04EE3400A0316C /* Localizable.strings */,
 				25AC9D381E026B4E003C7AC8 /* Assets.xcassets */,
 				25AC9D3A1E026B4E003C7AC8 /* Main.storyboard */,
@@ -243,6 +247,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				25AC9D391E026B4E003C7AC8 /* Assets.xcassets in Resources */,
+				2580E7991E04FB5600A0316C /* InfoPlist.strings in Resources */,
 				2580E7781E04EE3400A0316C /* Localizable.strings in Resources */,
 				25AC9D3C1E026B4E003C7AC8 /* Main.storyboard in Resources */,
 			);
@@ -294,6 +299,15 @@
 				2580E78A1E04EF0700A0316C /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2580E79B1E04FB5600A0316C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2580E79A1E04FB5600A0316C /* Base */,
+				2580E79C1E04FB5700A0316C /* zh-Hans */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		25AC9D3A1E026B4E003C7AC8 /* Main.storyboard */ = {
@@ -474,6 +488,7 @@
 				2580E78F1E04EF0700A0316C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		25AC9D271E026B4E003C7AC8 /* Build configuration list for PBXProject "Battery Time" */ = {
 			isa = XCConfigurationList;
