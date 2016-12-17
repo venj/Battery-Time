@@ -6,7 +6,7 @@
 
 ### 下载
 
-访问 [Releases](https://github.com/venj/Battery-Time/releases/) 页面，或 [点此下载](https://github.com/venj/Battery-Time/releases/download/1.0/BatteryTime.zip)。
+访问 [Releases](https://github.com/venj/Battery-Time/releases/) 页面，或 [点此下载](https://github.com/venj/Battery-Time/releases/download/1.1/BatteryTime.zip)。
 
 ### 关闭登录时启动
 
