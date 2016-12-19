@@ -11,6 +11,8 @@
 #import <notify.h>
 #import <ServiceManagement/ServiceManagement.h>
 
+#define STATUS_ITEM_GAP 6.0
+
 @interface AppDelegate ()
 @property (nonatomic, strong) NSMenu *statusMenu;
 @property (nonatomic, strong) NSMenuItem *batteryMenu;
@@ -62,7 +64,7 @@
     self.statusItem = [[NSStatusBar systemStatusBar] statusItemWithLength:NSVariableStatusItemLength];
     NSAttributedString *title = [self menuTitle];
     self.statusItem.attributedTitle = title;
-    self.statusItem.length = [title size].width + 6.0;
+    self.statusItem.length = [title size].width + STATUS_ITEM_GAP;
     self.statusMenu = [[NSMenu alloc] init];
     self.statusMenu.delegate = self;
     self.statusItem.menu = self.statusMenu;
@@ -96,7 +98,9 @@
 }
 
 - (void)updateBatteryTimeInfo {
-    self.statusItem.attributedTitle = [self menuTitle];
+    NSAttributedString *title = [self menuTitle];
+    self.statusItem.attributedTitle = title;
+    self.statusItem.length = [title size].width + STATUS_ITEM_GAP;
     self.batteryMenu.title = [self currentBatteryRemainTime];
 }
 
