@@ -55,6 +55,7 @@
 		2580E7961E04F57A00A0316C /* Battery Time Helper.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Battery Time Helper.entitlements"; sourceTree = "<group>"; };
 		2580E79A1E04FB5600A0316C /* Base */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = Base; path = Base.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		2580E79C1E04FB5700A0316C /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist.strings"; sourceTree = "<group>"; };
+		25A4DF211E07CADE006AC395 /* Battery Time.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Battery Time.entitlements"; sourceTree = "<group>"; };
 		25AC9D2C1E026B4E003C7AC8 /* Battery Time.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Battery Time.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		25AC9D2F1E026B4E003C7AC8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		25AC9D301E026B4E003C7AC8 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -118,6 +119,7 @@
 		25AC9D2E1E026B4E003C7AC8 /* Battery Time */ = {
 			isa = PBXGroup;
 			children = (
+				25A4DF211E07CADE006AC395 /* Battery Time.entitlements */,
 				25AC9D2F1E026B4E003C7AC8 /* AppDelegate.h */,
 				25AC9D301E026B4E003C7AC8 /* AppDelegate.m */,
 				2580E79B1E04FB5600A0316C /* InfoPlist.strings */,
@@ -209,6 +211,11 @@
 						CreatedOnToolsVersion = 8.2;
 						DevelopmentTeam = 32Y52676KN;
 						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -334,6 +341,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.Battery-Time-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -352,6 +360,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "me.venj.Battery-Time-Helper";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 3.0;
 			};
@@ -450,6 +459,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Battery Time/Battery Time.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32Y52676KN;
@@ -466,6 +476,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Battery Time/Battery Time.entitlements";
 				CODE_SIGN_IDENTITY = "Developer ID Application";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = 32Y52676KN;
